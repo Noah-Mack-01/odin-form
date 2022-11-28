@@ -180,7 +180,12 @@ button {
 }
 
 
-input:invalid {
-    border:#FF9999 solid 3px;
-}
 
+input:invalid, .error {
+	border: red solid 2px;
+ }
+
+
+label:has(+ input:invalid), #mismatch, label:has(+ input + .error) {
+	color: red;
+}

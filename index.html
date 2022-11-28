@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" delay></script>
 </head>
 
 <!--
@@ -67,13 +68,14 @@
                         </td>
                         <td>
                             <label for="phone">Phone Number</label>
-                            <input type="tel" name="phone" id="phone" placeholder="e.g. 415-XXX-XXXX" pattern="[0-9]{10}|[0-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9]{4}">
+                            <input type="text" name="phone" id="phone" placeholder="e.g. 415-XXX-XXXX" pattern="\d{10}">
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label for="password">Password</label>
                             <input type="password" name="password" id="password" placeholder="e.g Pass1!2" required>
+                            <div id="mismatch"></div>
                         </td>
                         <td>
                             <label for="c-password">Confirm Password</label>

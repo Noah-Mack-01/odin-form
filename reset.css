@@ -52,12 +52,3 @@ table {
 	font-size: 16pt;
 }
 
-
- input:invalid {
-	border: red solid 2px;
- }
-
-
-label:has(+ input:invalid) {
-	color: red;
-}
