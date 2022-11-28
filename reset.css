@@ -46,3 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+#already {
+	margin-top: -40px;
+	font-size: 16pt;
+}

@@ -26,7 +26,11 @@ body>div:first-child {
 #right-side>div{
     width: 100%;
     margin: 0;
-    border-width: 4px;
+    border-width: 7px;
+}
+
+#right-side>div:first-child {
+    font-weight: bold;
 }
 
 #right-side>div:first-child, #right-side>div:last-child {
@@ -43,7 +47,7 @@ body>div:first-child {
 }
 
 form {
-    width: 80%;
+    width: 60%;
     height: 90%;
 }
 
@@ -109,16 +113,42 @@ table {
 }
 
 button {
-    min-width: 250px;
+    min-width: 150px;
+    max-width: 300px;
     min-height: 60px;
     font-size: 16pt;
     font-weight: bold;
     color: white;
     background-color: #676;
     border-style: none;
-    border-radius: .75em;
+    border-radius: .35em;
 }
 
 #right-side>div>* {
-    margin: 40px 0  0 40px;
+    margin: 70px 0  0 40px;
+}
+
+#prompt>* {
+    width: 60%;
+    font-size: 24pt;
+}
+
+#prompt>*>span {
+    font-style: italic;
+}
+
+#create-or-login {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#create-or-login>*>* {
+    width: 40%;
+    margin-bottom: 20px;
+    font-size: 20pt;
+}
+
+#create-or-login>*>*+*{
+    margin-left: 2px;
 }

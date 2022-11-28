@@ -35,46 +35,56 @@
         </div>
     </div>
     <div class="vertical-part" id="right-side">
-        <div class="">Test</div>
+        <div id="prompt">
+            <p>
+                This is not a real online service!
+                You know you need something like this in your life to help you realize your deepest dreams.
+                Sign up <span>now</span> to get started.
+            </p>
+            <p>You <span>know</span> you want to.</p>
+        </div>
         <div id="form-box">
             <form action="">
                 <table>
                     <caption>Let's do this!</caption>
                     <tr>
                         <td>
-                            <label>First Name</label>
-                            <input>
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="e.g. Bob">
                         </td>
                         <td>
-                            <label>Last Name</label>
-                            <input>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Email Address</label>
-                            <input>
-                        </td>
-                        <td>
-                            <label>Phone Number</label>
-                            <input>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="e.g. Smith">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label>Password</label>
-                            <input>
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="e.g. bsmith@yahoo.com">
                         </td>
                         <td>
-                            <label>Confirm Password</label>
-                            <input>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" placeholder="e.g. 415-XXX-XXXX">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="e.g Pass1!2">
+                        </td>
+                        <td>
+                            <label for="c-password">Confirm Password</label>
+                            <input type="password" name="c-password" id="c-password" placeholder="Must match password.">
                         </td>
                     </tr>
                 </table>
             </form>
         </div>
-        <div>
-            <button>Create Account</button>
+        <div id="create-or-login">
+            <div>
+                <button>Create Account</button>
+                <div>Already have account? <a href="">Log in.</a></div>
+            </div>
         </div>
     </div>
 </body>
