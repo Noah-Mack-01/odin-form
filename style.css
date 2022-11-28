@@ -20,7 +20,8 @@ body>div:first-child {
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    width: 60%;
+    width: 80%;
+    min-width: 600px;
 }
 
 #right-side>div{
@@ -42,8 +43,8 @@ body>div:first-child {
     font-size: 14pt;
     font-family: "Allerta";
     height: 40%;
-    border-style: ridge none;
-    border-width: 10px;
+    border-style: groove none;
+    border-width: 5px;
 }
 
 form {
@@ -57,6 +58,7 @@ body {
     display: flex;
     flex-direction: row;
     width:100vw;
+    min-width: 900px;
     height:100vh;
 }
 
@@ -128,9 +130,20 @@ button {
     margin: 70px 0  0 40px;
 }
 
-#prompt>* {
+
+#prompt>div {
+    border: solid black 1px;
+    margin: 20px 0 0 40px;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#prompt>div>* {
     width: 60%;
-    font-size: 24pt;
+    font-size: 20pt;
 }
 
 #prompt>*>span {
@@ -152,3 +165,18 @@ button {
 #create-or-login>*>*+*{
     margin-left: 2px;
 }
+
+#create-or-login>div>div>a {
+    color: #676;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#citation {
+    position: relative;
+    color: white;
+    font-weight: 550;
+    top: 75%;
+    font-size: 14pt;
+}
+
