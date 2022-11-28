@@ -47,37 +47,37 @@
             </div>
         </div>
         <div id="form-box">
-            <form action="">
+            <form method="post" id="sign-up-form">
                 <table>
                     <caption>Let's do this!</caption>
                     <tr>
                         <td>
                             <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name" placeholder="e.g. Bob">
+                            <input type="text" name="first-name" id="first-name" placeholder="e.g. Bob" pattern="[A-Za-z]+" required>
                         </td>
                         <td>
                             <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name" placeholder="e.g. Smith">
+                            <input type="text" name="last-name" id="last-name" placeholder="e.g. Smith" pattern="[A-Za-z]+" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label for="email">Email Address</label>
-                            <input type="email" name="email" id="email" placeholder="e.g. bsmith@yahoo.com">
+                            <input type="email" name="email" id="email" placeholder="e.g. bsmith@yahoo.com" pattern="\w+@{1}\w+[.]{1}[A-Za-z]{3}" required>
                         </td>
                         <td>
                             <label for="phone">Phone Number</label>
-                            <input type="tel" name="phone" id="phone" placeholder="e.g. 415-XXX-XXXX">
+                            <input type="tel" name="phone" id="phone" placeholder="e.g. 415-XXX-XXXX" pattern="[0-9]{10}|[0-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9]{4}">
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="e.g Pass1!2">
+                            <input type="password" name="password" id="password" placeholder="e.g Pass1!2" required>
                         </td>
                         <td>
                             <label for="c-password">Confirm Password</label>
-                            <input type="password" name="c-password" id="c-password" placeholder="Must match password.">
+                            <input type="password" name="c-password" id="c-password" placeholder="Must match password." required>
                         </td>
                     </tr>
                 </table>
@@ -85,7 +85,7 @@
         </div>
         <div id="create-or-login">
             <div>
-                <button>Create Account</button>
+                <button type="submit" form="sign-up-form" value="Create Account">Create Account</button>
                 <div>Already have account? <a href="">Log in</a></div>
             </div>
         </div>

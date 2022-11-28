@@ -21,7 +21,7 @@ body>div:first-child {
     justify-content: space-around;
     height: 100%;
     width: 80%;
-    min-width: 600px;
+    min-width: 800px;
 }
 
 #right-side>div{
@@ -127,12 +127,11 @@ button {
 }
 
 #right-side>div>* {
-    margin: 70px 0  0 40px;
+    margin: 30px 0  0 40px;
 }
 
 
 #prompt>div {
-    border: solid black 1px;
     margin: 20px 0 0 40px;
     width: 95%;
     height: 90%;
@@ -178,5 +177,10 @@ button {
     font-weight: 550;
     top: 75%;
     font-size: 14pt;
+}
+
+
+input:invalid {
+    border:#FF9999 solid 3px;
 }
 
